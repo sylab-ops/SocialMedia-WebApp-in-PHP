@@ -1,0 +1,300 @@
+@font-face{
+	font-family: 'Bellota-LightItalic';
+	src: url('../fonts/Bellota-LightItalic.otf');
+}
+
+@font-face{
+	font-family: 'Bellota-LightItalic';
+	src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+
+	html, body{
+		height: 100%;
+		min-height: 100%;
+	}
+
+form{
+	text-align: center;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #3498db;
+}
+
+.wrapper{
+	background-image: url("../images/backgrounds/desktop.jpg");
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	min-width: 950px;
+
+}
+
+.login_box{
+	font-family: 'Bellota-LightItalic', sans-serif;
+    opacity: 1;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 20%;
+    width: 35%;
+    opacity: 0.98;
+    background-color: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.login_header{
+	font-family: 'Bellota-LightItalic', sans-serif;
+    width: 100%;
+    height: 90px;
+    background-color: #3498db;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 1% 0 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login_header h1{
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	margin-bottom: 0; 
+	margin-top: 0;
+	color: #2C6C96;
+	text-shadow: #73B6E2 0.5px 0.5px 0px;
+	font-size: 250%;
+}
+
+input[type="submit"]{
+	background-color: #3498db;
+	border: 1px solid #3498db;
+	border-radius: 3px;
+	margin: 5px, 0 10px 0;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-family: 'Bellota-Bold', sans-serif;
+	font-size: 100%;
+	text-shadow: #73B6E2 0.5px 0.5px 0px;
+	cursor: pointer;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+	border: 1px solid #e5e5e5;
+	margin-top: 5px;
+	width:70%;
+	height: 35px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	font-family: 'Bellota-Bold', sans-serif;
+	border-radius: 25px;
+	outline-style: none;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+		border-color: #3498db;
+		border-radius: 25px;
+}
+
+#second{
+	display: none;
+	border: none;
+	color: #156588;
+	border-radius: 5px;
+	font-family: 'Bellota-BoldItalic', sans-serif;
+	cursor: pointer;
+	
+}
+
+
+
+/* Top bar*/
+.logo {
+	width: 100%;
+	min-width: 1050px;
+	height: 80px;
+	background-color: #20aae5;
+	border-bottom: 0.25em solid #1894ca;
+	margin: 0 0 10px 0;
+	display: inline-flex;
+	position: fixed;
+	z-index: 10;
+	text-shadow: #73B6E2 0.5px 0.5px 0px;
+}
+
+.logo a{
+	font-family: 'Bellota-BoldItalic', sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #2C6C96;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
+    font-size: 250%;
+    border: 10px;
+    margin-top: 1.5%;
+    font-family: bold;
+
+}
+
+/*PASSWORD RESET*/
+
+	/* */
+	.resetPwd{
+		align-content: center;
+	}
+
+	.resetPwd a{
+    text-decoration: none;
+    color: #3498db;
+    float: right;
+
+}
+	
+
+
+	.forgetPwd {
+		float: right;
+		text-align: right;
+	}
+/* The Modal (background) */
+.modal {
+
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  margin-right: auto;
+  margin-left: auto;
+  top: 7px;
+  width: 100%; /* Full width */
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0.2,0.2,0.2,0.2); /* Black w/ opacity */
+  padding: 33px 65px 62px 65px;
+    
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+body h1 {
+    color: #444444;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.email-control-label{
+	padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.form-control {
+	border-radius: 20px;
+	width: 80%;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/*image */
+img.pwd-key-img {
+	justify-content: center;
+  width: 5%;
+  height: 5%;
+  border-radius: 25px;
+  background-color: #EBEBEB;
+  opacity: 0px
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+ #Copyright{
+  justify-content: center;
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+  background: #399adb;
+  border: 1px solid transparent;
+  font-size: 18px;
+ }
+
+
+/*Porfolio*/
+.portfolio a:link, a:visited {
+  background-color: #f44336;
+  color: blue;
+  padding: 25px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+
+.portfolio a:hover, a:active {
+  background-color: #399adb;
+}
+/*END*/
+
