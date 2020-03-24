@@ -1,7 +1,7 @@
 <?php
 		if(isset($_POST['login_button'])){
 
-			$email = filter_var($_POST['log_email'], FILTER_SANITIZE_EMAIL); // Santize email
+			$email = filter_var($_POST['log_email'], FILTER_SANITIZE_EMAIL); // Sanitize email
 
 			$_SESSION['log_email'] = $email; // Store email into session variable
 			$password  = md5 ($_POST['log_password']); //Encrypt the password into hashes format

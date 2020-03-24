@@ -61,7 +61,7 @@
 			<form action="" method="POST">
 				<?php 
 					if($user_to == "new") {
-						echo "Select the friend you would like message <br><br>";
+						echo "Select the friend you would like to message <br><br>";
 						?>
 
 						<!--Search for list of friends to send message-->

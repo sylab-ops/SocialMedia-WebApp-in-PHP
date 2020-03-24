@@ -32,7 +32,7 @@ if (isset($_POST["email"])) {
 	    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
 	    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 	    $mail->Username   = 'mrabblessedslyst4christ099@gmail.com';                     // SMTP username
-	    $mail->Password   = 'toorroot099!@#$_5991_m@$k';                               // SMTP password
+	    $mail->Password   = '';                               // SMTP password
 	    $mail->SMTPSecure = 'ssl';        // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 	    $mail->Port       = 465;                                    // TCP port to connect to
 
@@ -59,15 +59,19 @@ if (isset($_POST["email"])) {
 	?>
 		<!-- RESET PASSWORD -->
 
-			<form method="POST">
-				    	<input type="text" name="email"  placeholder="Email"><br><br>
-				    	<input type="submit" name="submit" value="Send Password Reset Link">
+    <form action="forget-Password.php" method="POST">
+        <center><h4 style="width: 200px; margin-top: 25px; font-family: 'Bellota-BoldItalic', sans-serif; font-size: 20px;">Forget Password</h4><hr></center>
+        <input type="text" name="email"  placeholder="Enter your email" style="width: 500px; height: 35px; text-align: center; border-radius: 5px;  border-inline: none; margin-bottom: 5px; margin-left: 500px;"><br>
+        <input name class="btn btn-primary" type="submit" value="Submit" style="width: 500px; height: 35px; background-color: #2C6C96;  border-radius: 5px; font-family: 'Bellota-BoldItalic', sans-serif; margin-left: 500px;">
+        <br><br>
+        <!-- Return to Register page -->
+        <div class="goToHomePage">
+            <center><a href="register.php" target="_top" style="font-weight: bold; margin-bottom: 80px; margin-top: -35px; text-align: center;"><img src="https://img.icons8.com/color/48/000000/return.png"/><h4 style="">Return to home page</h4></a></center>
+        </div>
+    </form>
 
-				    	<!-- Return to Register page -->
-				<div class="goBack">
-					<center><a href="register.php" target="_top" style="font-weight: bold; margin-bottom: 80px; margin-top: -35px; text-align: center;"><h4 style="text-align: center; font-weight: bold; margin-top: -2px; font-size: 40px; font-family: Lato, Helvetica, sans-serif;">Click to return to home page</h4></a></center>
-				</div>
-			</form>
+
+
 
 
 
