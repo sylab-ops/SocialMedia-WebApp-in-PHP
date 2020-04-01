@@ -1,7 +1,8 @@
 
 
 <!-- PHP MAILER FOR PASSWROD RESET -->
-	<?php
+<?php
+
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -12,6 +13,7 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'config/config.php';
+
 
 if (isset($_POST["email"])) {
 
@@ -53,22 +55,28 @@ if (isset($_POST["email"])) {
 	    echo 'Password reset link has been sent to your email';
 	} catch (Exception $e) {
 	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-	} 
+	}
 }
 
-	?>
+?>
+
 		<!-- RESET PASSWORD -->
 
-    <form action="forget-Password.php" method="POST">
+    <form action="forget_password.php" method="POST">
         <center><h4 style="width: 200px; margin-top: 25px; font-family: 'Bellota-BoldItalic', sans-serif; font-size: 20px;">Forget Password</h4><hr></center>
         <input type="text" name="email"  placeholder="Enter your email" style="width: 500px; height: 35px; text-align: center; border-radius: 5px;  border-inline: none; margin-bottom: 5px; margin-left: 500px;"><br>
         <input name class="btn btn-primary" type="submit" value="Submit" style="width: 500px; height: 35px; background-color: #2C6C96;  border-radius: 5px; font-family: 'Bellota-BoldItalic', sans-serif; margin-left: 500px;">
         <br><br>
         <!-- Return to Register page -->
         <div class="goToHomePage">
-            <center><a href="register.php" target="_top" style="font-weight: bold; margin-bottom: 80px; margin-top: -35px; text-align: center;"><img src="https://img.icons8.com/color/48/000000/return.png"/><h4 style="">Return to home page</h4></a></center>
+            <center><a href="register.php" target="_top" style="font-weight: bold; margin-bottom: 80px; margin-top: -35px; text-align: center;"><img src="https://img.icons8.com/color/48/000000/return.png"/><h4>Return to home page</h4></a></center>
         </div>
+
+        <footer id="Copyright" align="center" style="margin-top: 200px;">
+            <h4>Copyright&nbsp;©2019 by Abraham Sylvester. All rights reserved.</h4>
+        </footer>
     </form>
+
 
 
 
