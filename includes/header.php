@@ -43,8 +43,10 @@
 <div class="top_bar">
 		<!-- Home page Menu setup with the Blue Icon/name of the website-->
 		<div class="logo">
-			<a href="index.php">Boomuprising!</a>
-		</div>
+			<a href="index.php">SportZure</a>
+<!--            assets/images/icons/logo.jpg-->
+
+        </div>
 
 
 			<!-- Search box -->

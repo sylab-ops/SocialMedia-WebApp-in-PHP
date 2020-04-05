@@ -50,7 +50,7 @@ require 'includes/form_handlers/login_handler.php';
 <div class="top_bar">
 		<!-- Home page Menu setup with the Blue Icon/name of the website-->
 		<div class="logo">
-			<a href="index.php"><img src="assets/images/icons/logo.jpg" alt="SportZure" style="height: 60px; width: 80px; border-radius: 10px; margin-bottom: -20px; margin-top: -140px;">SportZure</a>
+			<a href="index.php"><img src="assets/images/icons/logo.jpg" alt="SportZure" style="height: 60px; width: 80px; border-radius: 10px; margin-bottom: -20px; margin-top: -100px;">SportZure</a>
 		</div>
 
 
