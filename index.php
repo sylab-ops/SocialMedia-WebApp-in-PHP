@@ -51,13 +51,14 @@
 
  <!--On click, Links to the user profile-->
 	<div class="user_details column">
-		<a href="<?php echo $userLoggedIn; ?>">  <img src="<?php echo $user['profile_pic']; ?>"> </a>
+		<a href="<?php echo $userLoggedIn; ?>"><img src="<?php echo $user ['profile_pic']; ?>"> </a>
 
 		<div class="user_details_left_right">
 			<a href="<?php echo $userLoggedIn; ?>">
-			<?php 
-			echo $user['first_name'] . " " . $user['last_name']; // Returns user firstName and LastName on the profile
 
+<!--// Returns user firstName and LastName on the profile-->
+			<?php 
+			echo $user['first_name'] . " " . $user['last_name'];
 			 ?>
 			</a>
 			<br>
@@ -84,7 +85,6 @@
 
 	<div class="user_details column">
 		<h5>Popular trending words</h5>
-
 		<div class="trends">
 <?php 
 
@@ -110,15 +110,25 @@
     <div class="user_details column">
         <h5>Explore</h5>
         <div class="explore">
-            <a href="../explore/market.php" target="_top"><img src="https://img.icons8.com/cute-clipart/64/000000/shop.png" style="height: 20px;"/><span style="margin-bottom: 40px;">Market</span>
+            <a href="explore/market.php" target="_top"><img src="https://img.icons8.com/cute-clipart/64/000000/shop.png" style="height: 20px;"/><span style="margin-bottom: 40px;">Market</span>
             </a><br><br>
-            <a href=""><img src="https://img.icons8.com/color/48/000000/group.png" style="height: 25px;" "/><span>Group</span
+            <a href="explore/group.php"><img src="https://img.icons8.com/color/48/000000/group.png" style="height: 25px;" "/><span>Group</span
             </a><br><br>
             <a href=""><img src="https://img.icons8.com/color/48/000000/tear-off-calendar.png" style="height: 25px;"/><span>Events</span></a><br><br>
             <a href=""><img src="https://img.icons8.com/officel/16/000000/filled-flag.png" style="height: 25px;"/><span>Pages</span></a>
         </div>
+    </div>
 
-	<script>
+
+        <!--Explore container-->
+        <div class="user_details column">
+            <h5>Location</h5>
+            <div class="user_location">
+                <i class="fa fa-location-arrow" style="width: 12px; height: 20px; background-position: -93px -363px;"></i><input type="text" name="location" placeholder="Tallinn, Estonia" style="border-line: white; border-color: white; border: none; height: 25px; width: 120px; text-align: center">
+            </div>
+
+
+            <script>
 			var userLoggedIn = '<?php echo $userLoggedIn; ?>';
 			$(document).ready(function() {
 				$('#loading').show();
