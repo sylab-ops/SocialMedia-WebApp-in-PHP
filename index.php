@@ -110,7 +110,7 @@
     <div class="user_details column">
         <h5>Explore</h5>
         <div class="explore">
-            <a href="../explore/market.php" target="_top"><img src="https://img.icons8.com/cute-clipart/64/000000/shop.png" style="height: 20px;"/><span style="margin-bottom: 40px;">Market</span>
+            <a href=""><img src="https://img.icons8.com/cute-clipart/64/000000/shop.png" style="height: 20px;"/><span style="margin-bottom: 40px;">Market</span>
             </a><br><br>
             <a href=""><img src="https://img.icons8.com/color/48/000000/group.png" style="height: 25px;" "/><span>Group</span
             </a><br><br>

@@ -178,6 +178,8 @@
 			return false;
 
 		}); //End (window).scroll(function())
+
+
 	});
 
 	</script>
