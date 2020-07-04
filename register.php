@@ -50,13 +50,13 @@ require 'includes/form_handlers/login_handler.php';
 <div class="top_bar">
 		<!-- Home page Menu setup with the Blue Icon/name of the website-->
 		<div class="logo">
-			<a href="index.php"><img src="assets/images/icons/logo.jpg" alt="SportZure" style="height: 60px; width: 80px; border-radius: 10px; margin-bottom: -20px; margin-top: -140px;">SportZure</a>
+			<a href="index.php">Boomuprising!</a>
 		</div>
 
 
 		<div class="wrapper">
 
-            <div class="login_box">
+			<div class="login_box">
 				<div class="login_header"><br><br>
 					<!-- <h1>Boomuprising</h1> -->
 					Login or sign up below!
@@ -81,14 +81,12 @@ require 'includes/form_handlers/login_handler.php';
 						
 						<input type="submit" name="login_button" value="Login">
 						<!--Forgot passowrd-->
-						<a href="forget_password.php">Forgot Your Password?</a><br>
+						<a href="forget-Password.php">Forgot Your Password?</a><br>
 						<a href="#" id="signup" class="signup">Need an account? Register here!</a><br>
-
 					</form>
-
 				</div>
 
-                <!-- Porfolio -->
+				<!-- Porfolio -->
 				<!-- <div class="portfolio">
 					<h4 style="text-align: center; font-weight: bold; margin-top: -2px; font-size: 40px; font-family: Lato, Helvetica, sans-serif;">My portfolio<img src="https://img.icons8.com/flat_round/64/000000/link.png"></h4>
 					<center><a href="portfolio.html" target="_blank" style="font-weight: bold; margin-bottom: 80px; margin-top: -35px; text-align: center;"><img src="https://img.icons8.com/ios/50/000000/portfolio-filled.png"></a></center>
@@ -143,20 +141,13 @@ require 'includes/form_handlers/login_handler.php';
 
 							</form>
 					</div>
-
-            </div>
-            <h2 style="font-family: 'Bellota-Bold', sans-serif; font-style: oblique; font-size: 30px; text-align: center; color:azure; margin-top: 250px; margin-bottom: -50px;">We bring to your favourite sports and also connect you with people of like-minds at the tip of your finger!
-            </h2>
-          <center><a href="/Boomuprising-demo-github.com/Portfolio/index.html" target="_blank"><button class="btn-primary " style="margin-bottom: 30px; margin-top: 100px; height: 50px; margin-left: 2px; font-style: inherit; border-radius: 60px;background-color: #1d2124; background-color: #d82c2e; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; cursor: pointer;">Developer's page</button></center>
-            </a>
-
-        </div>
-
-        </body>
-
-         <footer id="Copyright" align="center">
-                 <h4>Copyright&nbsp;©2019 by Abraham Sylvester. All rights reserved.</h4>
-         </footer>
+</div>
+	
+</div>
+</body>
+ <footer id="Copyright" align="center">
+ 		<h4>Copyright&nbsp;©2019 by Abraham Sylvester. All rights reserved.</h4>
+ </footer>
 </html>
 
 
