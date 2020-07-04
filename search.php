@@ -56,7 +56,7 @@
 				echo "<br>";
 				echo "<br>";
 				echo "<p id='grey'>Try searching for:</p><br>";
-				echo "<a href='search.php?q=". $query ."&type=name'>Names</a> or <a href='search.php?q=". $query ."&type=username'> Usernames</a><hr id='search_hr>";
+				echo "<a href='search.php?q=". $query ."&type=name'>Names</a> or <a href='search.php?q=". $query ."&type=username'>Usernames</a><hr id='search_hr>";
 
 				//While loop to fetch number of usernames or  Names found
 				while($row = mysqli_fetch_array($userReturnedQuery)) {
