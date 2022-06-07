@@ -98,5 +98,4 @@
 			<br>
 			<a href="messages.php?u=new">New Message</a>
 
-	</div>
-	
+	</div> //End
